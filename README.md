@@ -1,4 +1,4 @@
-# 🍭 LG-Ultra-PC-15UD50N-GX50K-Hackintosh 🍬
+# 🍭 LG-Ultra-PC-15UD50N-GX56K-Hackintosh 🍬
 
 ## 🌿 System Specification
 | Name | Description |
