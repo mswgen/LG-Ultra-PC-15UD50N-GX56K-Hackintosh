@@ -20,7 +20,6 @@
  */
 DefinitionBlock ("", "SSDT", 2, "ACDT", "OSYS", 0x00000000)
 {
-    External (_SB_.PCI0.LPCB.EC0_.ECOK, FieldUnitObj)
     External (OSYS, FieldUnitObj)
 
     Scope (\_SB)
@@ -33,11 +32,6 @@ DefinitionBlock ("", "SSDT", 2, "ACDT", "OSYS", 0x00000000)
                 If (CondRefOf (\OSYS))
                 {
                     OSYS = 0x07DF
-                }
-
-                If (CondRefOf (\_SB.PCI0.LPCB.EC0.ECOK))
-                {
-                    \_SB.PCI0.LPCB.EC0.ECOK = One
                 }
             }
 
