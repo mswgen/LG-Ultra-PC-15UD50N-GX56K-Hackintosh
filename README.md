@@ -10,7 +10,7 @@
 | Sound | Realtek HD Audio ALC 255 |
 | Ethernet | Realtek PCIe GBE Family Controller |
 | Wi-Fi / Bluetooth | Intel Wi-Fi 6 AX201 |
-| TrackPad | Synaptics I2C HID-Compliant TorackPad (SYN1B8B) |
+| TrackPad | Synaptics I2C HID-Compliant TrackPad (SYN1B8B) |
 | BIOS | InsydeH2O Rev 5.0 UEFI BIOS |
 
 ## 🍃 macOS & OpenCore Versions
