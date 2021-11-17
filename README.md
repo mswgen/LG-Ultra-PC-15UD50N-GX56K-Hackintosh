@@ -7,15 +7,15 @@
 | Chipsets | Intel Cannon Lake - LP |
 | Graphics | Intel UHD Graphics 620 |
 | Memory | DDR4 PC4-21300 2667 MHz 16GB |
-| Sound | Realtek HD Audio ALC 255 |
-| Ethernet | Realtek PCIe GBE Family Controller |
+| Sound | Realtek HD Audio ALC255 |
+| Ethernet | Realtek RTL8111/RTL8168 |
 | Wi-Fi / Bluetooth | Intel Wi-Fi 6 AX201 |
 | TrackPad | Synaptics I2C HID-Compliant TrackPad (SYN1B8B) |
 | BIOS | InsydeH2O Rev 5.0 UEFI BIOS |
 
 ## 🍃 macOS & OpenCore Versions
-- macOS Big Sur 11.6
-- OpenCore 0.7.4
+- macOS Monterey 12.0.1
+- OpenCore 0.7.5
 
 ## ❄️ ACPI SSDT Hot Patches
 | No. | SSDT Name | ACPI Rename Required | ACPI Patch Type | OEM DSDT Override |
@@ -32,13 +32,15 @@
 
 ## ⚠️ Issues
 - iMessage and FaceTime doesn't work
+- Bluetooth partially works
 
 ## ✅ Working
 - Intel UHD Graphics 620 QE/CI
 - Intel UHD Graphics 620 AGPM
-- Realtek ALC 255
+- Realtek ALC255
 - Speed Step (Speed Shift + XCPM)
 - Realtek Wired Network
+- Intel Wi-Fi 6 AX201 Wi-Fi (Excluding Bluetooth)
 - USB 3.0
 - USB HD Webcam
 - Night Shift
@@ -52,3 +54,4 @@
 
 ## ❌ Not Working
 - iMessage & FaceTime
+- Bluetooth (Discoverable but can't connect)
