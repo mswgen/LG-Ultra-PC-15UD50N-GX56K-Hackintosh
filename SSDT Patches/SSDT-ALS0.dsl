@@ -5,36 +5,36 @@
  * 
  * Disassembling to symbolic ASL+ operators
  *
- * Disassembly of SSDT-OSYS.aml, Fri Dec  3 23:17:57 2021
+ * Disassembly of SSDT-ALS0.aml, Fri Dec  3 23:17:57 2021
  *
  * Original Table Header:
  *     Signature        "SSDT"
- *     Length           0x0000007A (122)
+ *     Length           0x00000084 (132)
  *     Revision         0x02
- *     Checksum         0x86
+ *     Checksum         0xD9
  *     OEM ID           "ACDT"
- *     OEM Table ID     "OSYS"
+ *     OEM Table ID     "ALS0"
  *     OEM Revision     0x00000000 (0)
  *     Compiler ID      "INTL"
  *     Compiler Version 0x20200925 (538970405)
  */
-DefinitionBlock ("", "SSDT", 2, "ACDT", "OSYS", 0x00000000)
+DefinitionBlock ("", "SSDT", 2, "ACDT", "ALS0", 0x00000000)
 {
-    External (OSYS, FieldUnitObj)
-
-    Scope (\_SB)
+    Scope (_SB)
     {
-        Device (PCI1)
+        Device (ALS0)
         {
-            Name (_ADR, Zero)  // _ADR: Address
-            Method (_INI, 0, NotSerialized)  // _INI: Initialize
+            Name (_HID, "ACPI0008" /* Ambient Light Sensor Device */)  // _HID: Hardware ID
+            Name (_CID, "smc-als")  // _CID: Compatible ID
+            Name (_ALI, 0x012C)  // _ALI: Ambient Light Illuminance
+            Name (_ALR, Package (0x01)  // _ALR: Ambient Light Response
             {
-                If (CondRefOf (\OSYS))
+                Package (0x02)
                 {
-                    OSYS = 0x07DF
+                    0x64, 
+                    0x012C
                 }
-            }
-
+            })
             Method (_STA, 0, NotSerialized)  // _STA: Status
             {
                 If (_OSI ("Darwin"))

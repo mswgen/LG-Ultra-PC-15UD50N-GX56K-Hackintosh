@@ -5,7 +5,7 @@
  * 
  * Disassembling to symbolic ASL+ operators
  *
- * Disassembly of SSDT-BATT.aml, Sun Oct 24 23:00:47 2021
+ * Disassembly of SSDT-BATT.aml, Fri Dec  3 23:17:57 2021
  *
  * Original Table Header:
  *     Signature        "SSDT"

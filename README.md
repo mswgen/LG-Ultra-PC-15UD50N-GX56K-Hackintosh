@@ -1,6 +1,6 @@
-# 🍭 LG-Ultra-PC-15UD50N-GX56K-Hackintosh 🍬
+# 🚘 LG-Ultra-PC-15UD50N-GX56K-Hackintosh 🚙
 
-## 🌿 System Specification
+## 💻 System Specification
 | Name | Description |
 | - | - |
 | CPU | Intel 10th Gen Comet Lake Core i5 - 10210U 2.11 GHz |
@@ -13,7 +13,7 @@
 | TrackPad | Synaptics I2C HID-Compliant TrackPad (SYN1B8B) |
 | BIOS | InsydeH2O Rev 5.0 UEFI BIOS |
 
-## 🍃 macOS & OpenCore Versions
+## 🍎 macOS & OpenCore Versions
 - macOS Monterey 12.0.1
 - OpenCore 0.7.5
 
@@ -29,9 +29,9 @@
 | 7 | SSDT-PNLF.aml | X | Injection | X |
 | 8 | SSDT-AWAC.aml | X | Preset Variable Method | O |
 | 9 | SSDT-GPIO.aml | O | Hot Patch & Override | O |
+| 10 | SSDT-ALS0.aml | X | Injection | X |
 
 ## ⚠️ Issues
-- iMessage and FaceTime doesn't work
 - Bluetooth partially works
 
 ## ✅ Working
@@ -51,7 +51,9 @@
 - Fn Keys (Brightness & Sound Volume Control)
 - Sleep & Wake
 - Sleep by Closing Lid
+- iMessage & FaceTime
+- Backlight smoother
+- Realtek USB Card Reader
 
 ## ❌ Not Working
-- iMessage & FaceTime
 - Bluetooth (Discoverable but can't connect)
