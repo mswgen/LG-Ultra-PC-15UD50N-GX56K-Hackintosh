@@ -14,8 +14,8 @@
 | BIOS | InsydeH2O Rev 5.0 UEFI BIOS |
 
 ## 🍎 macOS & OpenCore Versions
-- macOS Monterey 12.0.1
-- OpenCore 0.7.5
+- macOS Monterey 12.5
+- OpenCore 0.8.2
 
 ## ❄️ ACPI SSDT Hot Patches
 | No. | SSDT Name | ACPI Rename Required | ACPI Patch Type | OEM DSDT Override |
@@ -56,4 +56,4 @@
 - Realtek USB Card Reader
 
 ## ❌ Not Working
-- Bluetooth (Discoverable but can't connect)
+- Bluetooth (Partially)
