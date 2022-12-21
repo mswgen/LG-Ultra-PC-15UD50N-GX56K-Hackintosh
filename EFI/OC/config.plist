@@ -837,6 +837,8 @@
 				<string>Internal@0,31,3</string>
 				<key>device_type</key>
 				<string>Audio device</string>
+				<key>hda-gfx</key>
+				<string>onboard-1</string>
 				<key>layout-id</key>
 				<data>
 				AwAAAA==
@@ -868,8 +870,6 @@
 				<data>
 				AACbPg==
 				</data>
-				<key>AAPL,slot-name</key>
-				<string>Internal@0,2,0</string>
 				<key>backlight-smoother-interval</key>
 				<data>
 				BgAAAA==
@@ -892,6 +892,22 @@
 				<data>
 				AQAAAA==
 				</data>
+				<key>enable-hdmi-dividers-fix</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-con1-busid</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-con1-enable</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-con1-type</key>
+				<data>
+				AAgAAA==
+				</data>
 				<key>framebuffer-fbmem</key>
 				<data>
 				AACQAA==
@@ -904,6 +920,8 @@
 				<data>
 				AAAwAQ==
 				</data>
+				<key>hda-gfx</key>
+				<string>onboard-1</string>
 				<key>model</key>
 				<string>Intel UHD Graphics 620</string>
 			</dict>
@@ -1545,6 +1563,24 @@
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>HibernationFixup.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/HibernationFixup</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
 		</array>
 		<key>Block</key>
 		<array>
@@ -1925,6 +1961,8 @@
 			<integer>0</integer>
 			<key>HibernateMode</key>
 			<string>None</string>
+			<key>HibernateSkipsPicker</key>
+			<false/>
 			<key>HideAuxiliary</key>
 			<false/>
 			<key>LauncherOption</key>
@@ -2157,7 +2195,7 @@
 			<integer>0</integer>
 			<key>ROM</key>
 			<data>
-			ESIzRFVm
+			yv66vhI0
 			</data>
 			<key>SpoofVendor</key>
 			<true/>
