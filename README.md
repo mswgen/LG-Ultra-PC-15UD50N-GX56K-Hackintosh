@@ -14,8 +14,8 @@
 | BIOS | InsydeH2O Rev 5.0 UEFI BIOS |
 
 ## 🍎 macOS & OpenCore Versions
-- macOS Monterey 12.5
-- OpenCore 0.8.2
+- macOS Sonoma 14.2.1
+- OpenCore 0.9.7
 
 ## ❄️ ACPI SSDT Hot Patches
 | No. | SSDT Name | ACPI Rename Required | ACPI Patch Type | OEM DSDT Override |
@@ -33,6 +33,7 @@
 
 ## ⚠️ Issues
 - Bluetooth partially works
+- iServices not working in Sonoma
 
 ## ✅ Working
 - Intel UHD Graphics 620 QE/CI
@@ -51,9 +52,10 @@
 - Fn Keys (Brightness & Sound Volume Control)
 - Sleep & Wake
 - Sleep by Closing Lid
-- iMessage & FaceTime
+- ~~iMessage & FaceTime~~ not working until future AirportItlwm update
 - Backlight smoother
 - Realtek USB Card Reader
 
 ## ❌ Not Working
 - Bluetooth (Partially)
+- iServices (in Sonoma)
