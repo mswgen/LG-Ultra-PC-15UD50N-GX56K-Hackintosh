@@ -657,6 +657,8 @@
 			<true/>
 			<key>EnableWriteUnprotector</key>
 			<true/>
+			<key>FixupAppleEfiImages</key>
+			<false/>
 			<key>ForceBooterSignature</key>
 			<false/>
 			<key>ForceExitBootServices</key>
@@ -872,15 +874,15 @@
 				</data>
 				<key>backlight-smoother-interval</key>
 				<data>
-				BgAAAA==
+				BwAAAA==
 				</data>
 				<key>backlight-smoother-steps</key>
 				<data>
-				HgAAAA==
+				IwAAAA==
 				</data>
 				<key>backlight-smoother-threshold</key>
 				<data>
-				AAAAAA==
+				LAEAAA==
 				</data>
 				<key>device-id</key>
 				<data>
@@ -1261,6 +1263,24 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
+				<string>BrcmPatchRAM3.kext</string>
+				<key>Comment</key>
+				<string>BrcmPatchRAM3.kext</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/BrcmPatchRAM3</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string>23.00.00</string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
 				<string>NVMeFix.kext</string>
 				<key>Comment</key>
 				<string>NVMeFix.kext</string>
@@ -1574,6 +1594,24 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/HibernationFixup</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>RestrictEvents.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/RestrictEvents</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -1908,6 +1946,8 @@
 			<false/>
 			<key>DisableIoMapper</key>
 			<true/>
+			<key>DisableIoMapperMapping</key>
+			<false/>
 			<key>DisableLinkeditJettison</key>
 			<true/>
 			<key>DisableRtcChecksum</key>
@@ -1964,7 +2004,9 @@
 			<key>HibernateSkipsPicker</key>
 			<false/>
 			<key>HideAuxiliary</key>
-			<false/>
+			<true/>
+			<key>InstanceIdentifier</key>
+			<string></string>
 			<key>LauncherOption</key>
 			<string>Short</string>
 			<key>LauncherPath</key>
@@ -1980,9 +2022,9 @@
 			<key>PollAppleHotKeys</key>
 			<true/>
 			<key>ShowPicker</key>
-			<true/>
+			<false/>
 			<key>TakeoffDelay</key>
-			<integer>750000</integer>
+			<integer>1000000</integer>
 			<key>Timeout</key>
 			<integer>10</integer>
 		</dict>
@@ -2046,9 +2088,12 @@
 			<integer>2147483648</integer>
 			<key>PasswordHash</key>
 			<data>
+			98pC2ahr3a1KB+MlXrZDwQDroAmxQ/Vrh48is2V4WMzlkFzvriNF
+			0VBA1HqZtmKIe4gRWqPMq9pst5nMsFgSLQ==
 			</data>
 			<key>PasswordSalt</key>
 			<data>
+			Iz0Ub8JxDElUJGU9Xc2+3g==
 			</data>
 			<key>ScanPolicy</key>
 			<integer>0</integer>
@@ -2109,12 +2154,16 @@
 			<dict>
 				<key>ForceDisplayRotationInEFI</key>
 				<integer>0</integer>
+				<key>StartupMute</key>
+				<data>
+				AA==
+				</data>
 				<key>SystemAudioVolume</key>
 				<data>
 				Rg==
 				</data>
 				<key>boot-args</key>
-				<string>keepsyms=1 -igfxblr</string>
+				<string>keepsyms=1 -igfxblt revpatch=sbvmm</string>
 				<key>csr-active-config</key>
 				<data>
 				AAAAAA==
@@ -2141,7 +2190,6 @@
 			<array>
 				<string>boot-args</string>
 				<string>ForceDisplayRotationInEFI</string>
-				<string>SystemAudioVolumeDB</string>
 			</array>
 		</dict>
 		<key>LegacyOverwrite</key>
@@ -2195,7 +2243,7 @@
 			<integer>0</integer>
 			<key>ROM</key>
 			<data>
-			yv66vhI0
+			ESIzRFVm
 			</data>
 			<key>SpoofVendor</key>
 			<true/>
@@ -2404,10 +2452,14 @@
 			<false/>
 			<key>ForceResolution</key>
 			<false/>
+			<key>GopBurstMode</key>
+			<false/>
 			<key>GopPassThrough</key>
 			<string>Disabled</string>
 			<key>IgnoreTextInGraphics</key>
 			<false/>
+			<key>InitialMode</key>
+			<string>Auto</string>
 			<key>ProvideConsoleGop</key>
 			<true/>
 			<key>ReconnectGraphicsOnConnect</key>
@@ -2463,6 +2515,8 @@
 			<false/>
 			<key>OSInfo</key>
 			<false/>
+			<key>PciIo</key>
+			<false/>
 			<key>UnicodeCollation</key>
 			<false/>
 		</dict>
@@ -2492,6 +2546,10 @@
 			<true/>
 			<key>ResizeGpuBars</key>
 			<integer>-1</integer>
+			<key>ResizeUsePciRbIo</key>
+			<false/>
+			<key>ShimRetainProtocol</key>
+			<false/>
 			<key>TscSyncTimeout</key>
 			<integer>0</integer>
 			<key>UnblockFsConnect</key>
