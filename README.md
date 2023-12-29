@@ -1,5 +1,7 @@
 # 🚘 LG-Ultra-PC-15UD50N-GX56K-Hackintosh 🚙
 
+![About This Mac](about-this-mac.png)
+
 ## 💻 System Specification
 | Name | Description |
 | - | - |
